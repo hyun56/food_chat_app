@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_chat_app/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -173,6 +174,12 @@ class _LoginScreenState extends State<LoginScreen> {
                             child: ElevatedButton(
                               onPressed: () {
                                 // Add your onPressed logic here
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const SignupScreen()),
+                                );
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Color(0xff6b20de),
